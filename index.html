@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jibonge | Your Safe Space</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="#" class="logo"><i data-lucide="heart" class="icon-primary"></i><span>Jibonge</span></a>
+            <ul class="nav-links">
+                <li><a href="#online-therapy">Online Therapy</a></li>
+                <li><button class="btn-primary" onclick="openContact()">Contact Us</button></li>
+                <li><button class="btn-accent" onclick="openBooking()">Book Now</button></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="container hero-grid">
+            <div class="hero-text">
+                <h1>Talk, Heal, and <span class="text-primary">Find Peace</span></h1>
+                <p>Welcome to Jibonge. Whether online or in person, we provide a safe, non-judgmental space for your mental health journey.</p>
+                <div class="hero-btns">
+                    <button class="btn-accent" onclick="openBooking()">Schedule Session</button>
+                    <button class="btn-outline" onclick="openContact()">Get in Touch</button>
+                </div>
+            </div>
+            <div class="hero-image-container">
+                <img src="lead-consultant.jpg" alt="Kioko Njeri" class="lead-photo">
+                <div class="photo-caption"><strong>Kioko Njeri</strong><br>Lead Consultant</div>
+            </div>
+        </div>
+    </header>
+
+    <section id="online-therapy" class="online-section">
+        <div class="container">
+            <h2 class="section-title">Online Therapy Services</h2>
+            <div class="grid-2">
+                <div class="info-card">
+                    <h3>Why Choose Online Therapy?</h3>
+                    <p>Professional counseling from home. Ideal for busy schedules and total privacy.</p>
+                    <ul class="therapy-list">
+                        <li><i data-lucide="video"></i> Secure Video Sessions</li>
+                        <li><i data-lucide="message-circle"></i> Private Chat Support</li>
+                    </ul>
+                </div>
+                <div class="info-card">
+                    <h3>How It Works</h3>
+                    <p>Book, pay, and receive your Google Meet link instantly via SMS or Email.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div id="bookingModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeBooking()">&times;</span>
+            <h2>Secure Your Session</h2>
+            <div class="payment-box">
+                <h3>Step 1: M-Pesa Payment</h3>
+                <p>Send <strong>KES 2,500</strong> to:</p>
+                <div class="number-display">0794771937</div>
+                <p class="small-text">Name: Kioko Njeri</p>
+            </div>
+            <button class="btn-primary full-width" onclick="confirmBooking()">I Have Paid - Confirm</button>
+        </div>
+    </div>
+
+    <div id="contactModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeContact()">&times;</span>
+            <h2>Contact Details</h2>
+            <div class="contact-item"><i data-lucide="phone"></i><span>0794771937</span></div>
+            <div class="contact-item"><i data-lucide="mail"></i><span>jaspherkioko45@gmail.com</span></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script>lucide.createIcons();</script>
+</body>
+                                                                                    </html>
